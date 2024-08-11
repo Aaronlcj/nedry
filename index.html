@@ -3,8 +3,8 @@
 <head>
   <title>Ah Ah Ah, you didn't say the magic word!</title>
 </head>
-<html>
-  <body onload="playSound()">
+<html onclick="playSound()">
+  <body>
     <div class="container">
       <div class="nedry">
         <img class="nedry-body" src="resources/body.png">
@@ -19,7 +19,6 @@
   <link rel="stylesheet" href="resources/style.css">
   <script>
       function playSound() {
-        document.getElementById("player").click();
         document.getElementById("player").play();
       }
     </script>
