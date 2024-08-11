@@ -4,7 +4,7 @@
   <title>Ah Ah Ah, you didn't say the magic word!</title>
 </head>
 <html>
-  <body>
+  <body onload="playSound()">
     <div class="container">
       <div class="nedry">
         <img class="nedry-body" src="resources/body.png">
@@ -17,4 +17,9 @@
     </div>
   </body>
   <link rel="stylesheet" href="resources/style.css">
+  <script>
+      function playSound() {
+        document.getElementById("player").play();
+      }
+    </script>
 </html>
